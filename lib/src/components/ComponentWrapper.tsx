@@ -65,7 +65,7 @@ export class ComponentWrapper {
     class ReduxWrapper extends React.Component<any, any> {
       render() {
         return (
-          <ReduxProvider store={reduxStore}>
+          <ReduxProvider {...reduxStore}>
             <WrappedComponent {...this.props} />
           </ReduxProvider>
         );
